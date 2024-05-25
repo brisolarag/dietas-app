@@ -1,0 +1,20 @@
+.dietas-container {
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+}
+
+.dietas-items {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.dieta {
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    height: 80px;
+    background-color: white;
+    margin-bottom: 5px;
+}

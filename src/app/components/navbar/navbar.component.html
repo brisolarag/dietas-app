@@ -1,0 +1,162 @@
+@if (isOpened) 
+{
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px;height: 100%;">
+        <a href="/" class="icon-p">
+            <i class="fa-solid fa-person-running" style="margin-right: 15px;"></i><span style="font-weight: bolder;">DAPP</span>
+        </a>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+            @if (url == '/dietas' || url == '/') 
+            {
+                <a class="nav-link active" (click)="navigateTo('/dietas')">
+                    <i class="fa-solid fa-utensils opened-icon"></i>
+                    Dietas
+                </a>
+            } @else {
+                <a class="nav-link text-white" (click)="navigateTo('/dietas')">
+                    <i class="fa-solid fa-utensils opened-icon"></i>
+                    Dietas
+                </a>
+            }
+          </li>
+          <li class="nav-item">
+            @if (url == '/dados') 
+            {
+                <a class="nav-link active" (click)="navigateTo('/dados')">
+                    <i class="fa-solid fa-person opened-icon"></i>
+                    Dados
+                </a>
+            } @else 
+            {
+                <a class="nav-link text-white" (click)="navigateTo('/dados')">
+                    <i class="fa-solid fa-person opened-icon"></i>
+                    Dados
+                </a>
+            }
+          </li>
+          <li class="nav-item">
+            @if (url == '/nova-dieta') 
+            {
+                <a class="nav-link active" (click)="navigateTo('/nova-dieta')">
+                    <i class="fa-solid fa-square-plus opened-icon"></i>
+                    Nova Dieta
+                </a>
+            } @else 
+            {
+                <a class="nav-link text-white" (click)="navigateTo('/nova-dieta')">
+                    <i class="fa-solid fa-square-plus opened-icon"></i>
+                    Nova Dieta
+                </a>
+            }
+          </li>
+        </ul>
+        <button type="button" class="btn btn-outline-danger" (click)="close()"><i class="fa-solid fa-xmark"></i></button>
+        <hr>
+    </div>
+} @else 
+{
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 70px;height: 100%;">
+        <a href="/" class="icon-p icon-hidden" style="margin: 0;">
+          <i class="fa-solid fa-person-running"></i>
+        </a>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+            @if (url == '/dietas' || url == '/') 
+            {
+                <a class="nav-link active" (click)="navigateTo('/dietas')">
+                    <i class="fa-solid fa-utensils"></i>
+                </a>
+            } @else 
+            {
+                <a class="nav-link text-white" (click)="navigateTo('/dietas')">
+                    <i class="fa-solid fa-utensils"></i>
+                </a>
+            }
+          </li>
+          <li class="nav-item">
+            @if (url == '/dados') 
+            {
+                <a class="nav-link active" (click)="navigateTo('/dados')">
+                    <i class="fa-solid fa-person"></i>
+                </a>
+            } @else 
+            {
+                <a class="nav-link text-white" (click)="navigateTo('/dados')">
+                    <i class="fa-solid fa-person"></i>
+                </a>
+            }
+          </li>
+          <li class="nav-item">
+            @if (url == '/nova-dieta') 
+            {
+                <a class="nav-link active" (click)="navigateTo('/nova-dieta')">
+                    <i class="fa-solid fa-square-plus"></i>
+                </a>
+            } @else 
+            {
+                <a class="nav-link text-white" (click)="navigateTo('/nova-dieta')">
+                    <i class="fa-solid fa-square-plus"></i>
+                </a>
+            }
+          </li>
+        </ul>
+        <button type="button" class="btn btn-outline-danger" (click)="open()"><i class="fa-solid fa-xmark"></i></button>
+        <hr>
+    </div>
+
+
+    <!-- <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 70px;height: 100%;">
+        <a href="/" class="icon-p icon-hidden" style="margin: 0;">
+            <i class="fa-solid fa-person-running"></i>
+        </a>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+            @if (url == '/dietas' || url == '/') 
+            {
+                <a class="nav-link active" (click)="navigateTo('/dietas')">
+                    <i class="fa-solid fa-utensils opened-icon"></i>
+                </a>
+            } @else {
+                <a class="nav-link text-white" (click)="navigateTo('/dietas')">
+                    <i class="fa-solid fa-utensils opened-icon"></i>
+                </a>
+            }
+          </li>
+          <li class="nav-item">
+            @if (url == '/dados') 
+            {
+                <a class="nav-link active" (click)="navigateTo('/dados')">
+                    <i class="fa-solid fa-person opened-icon"></i>
+                </a>
+            } @else 
+            {
+                <a class="nav-link text-white" (click)="navigateTo('/dados')">
+                    <i class="fa-solid fa-person opened-icon"></i>
+                </a>
+            }
+          </li>
+          <li class="nav-item">
+            @if (url == '/nova-dieta') 
+            {
+                <a class="nav-link active" (click)="navigateTo('/nova-dieta')">
+                    <i class="fa-solid fa-square-plus opened-icon"></i>
+                </a>
+            } @else 
+            {
+                <a class="nav-link text-white" (click)="navigateTo('/nova-dieta')">
+                    <i class="fa-solid fa-square-plus opened-icon"></i>
+                </a>
+            }
+          </li>
+        </ul>
+        <button type="button" class="btn btn-outline-danger" (click)="open()"><i class="fa-solid fa-xmark"></i></button>
+        <hr>
+    </div> -->
+}
+
+
+
+

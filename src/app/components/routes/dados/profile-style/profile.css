@@ -1,0 +1,74 @@
+.profile-info {
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: white;
+
+    display: grid;
+    grid-template-columns: 200px auto;
+    position: relative;
+    .edit {
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+        border-radius: 50%;
+        border: none;
+    }
+    .edit-profile {
+        background-color: #0d6efd;
+        color: white;
+    }
+    .confirm-edit-profile {
+        background-color: #808836;
+        color: white;
+    }
+}
+
+.profile-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    img {
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+        border-radius: 50%;
+    }
+}
+
+.profile-details {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    .content {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        label {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .divided {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding-top: 10px;
+        .d-item {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+}
+
+

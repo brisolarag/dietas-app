@@ -1,0 +1,27 @@
+.historico-dietas {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: white;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    .h-item {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 40px;
+        background-color: #0d6efd;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        justify-content: space-between;
+        .h-item-id {
+            font-weight: bolder;
+        }
+    }
+}
